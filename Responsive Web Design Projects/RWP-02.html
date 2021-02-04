@@ -1,0 +1,61 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+<main>
+    <h1 id="title">Global warming Survey form</h1>
+    <p id="description">This form will help us to know what is the common knowledge about Global Warming</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="age" id="number-label">Idade:</label>
+            <input type="number" name="age" id="number" placeholder="Enter your Age" required min="5" max="95">
+        </div>
+        <div>
+            <select id="dropdown" name="dropdown">
+                <option disabled="" selected="" value="">Select your state</option>
+                <option value="challenges">NY</option>
+                <option value="projects">CA</option>
+                <option value="community">FL</option>
+                <option value="openSource">TX</option>
+            </select>
+        </div>
+        <div>
+            <label for="worried">
+                <input id="worried" value="worried" type="radio" name="worried-notworried">Worried about GW
+            </label>
+            <label for="notworried">
+                <input id="notworried" value="notworried" type="radio" name="worried-notworried">Not worried about GW
+            </label>
+        </div>
+        <div>
+            <label for="kids">
+                <input id="kids" value="kids" type="checkbox" name="kids-college">Have small kids
+            </label>
+            <label for="college">
+                <input id="college" value="college" type="checkbox" name="kids-college">Have a college degree
+            </label>
+        </div>
+        <label for="answer">What do you know about global warming:</label>
+        <div>
+            <textarea name="answer"></textarea>
+            <div>
+                <button type="submit" id="submit"> submit the form</button>
+    </form>
+</main>
+
+</html>
+
+<style>
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
