@@ -1,0 +1,129 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+
+<body>
+    <nav id="navbar">
+        <header>CSS Flexbox: Align Items</header>
+        <ul>
+            <li>
+                <a href="#introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#flex-start" class="nav-link">Flex-start</a>
+            </li>
+            <li>
+                <a href="#flex-end" class="nav-link">Flex-end</a>
+            </li>
+            <li>
+                <a href="#center" class="nav-link">Center</a>
+            </li>
+            <li>
+                <a href="#stretch" class="nav-link">Stretch</a>
+            </li>
+            <li>
+                <a href="#baseline" class="nav-link">Baseline</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <p>This document provides an explanation about Align Items funtion:</p>
+            <ul>
+                <li>Flex-start</li>
+                <li>Flex-end</li>
+                <li>Center</li>
+                <li>Stretch</li>
+                <li>Baseline</li>
+            </ul>
+        </section>
+        <section id="flex-start" class="main-section">
+            <header>Flex-start</header>
+            <p>Aligns items to the start of the flex container. For rows, this aligns items to the top of the container.
+                For columns, this aligns items to the left of the container.
+            </p>
+            <code>
+                #box-container {
+                display: flex;
+                align-items: flex-start;}
+            </code>
+            <p>.</p>
+        </section>
+        <section id="flex-end" class="main-section">
+            <header>Flex-end</header>
+            <p>Aligns items to the end of the flex container. For rows, this aligns items to the bottom of the
+                container. For columns, this aligns items to the right of the container.
+            </p>
+            <code>
+                #box-container {
+                display: flex;
+                align-items: flex-end;}
+            </code>
+            <p>.</p>
+        </section>
+        <section id="center" class="main-section">
+            <header>Center</header>
+            <p>Align items to the center. For rows, this vertically aligns items (equal space above and below the
+                items). For columns, this horizontally aligns them (equal space to the left and right of the items).
+            </p>
+            <code>
+                #box-container {
+                display: flex;
+                align-items: center;}
+            </code>
+            <p>.</p>
+        </section>
+        <section id="stretch" class="main-section">
+            <header>Stretch</header>
+            <p>Stretch the items to fill the flex container. For example, rows items are stretched to fill the flex
+                container top-to-bottom. This is the default value if no align-items value is specified.
+            </p>
+            <code>#
+                box-container {
+                display: flex;
+                align-items: stretch;}   
+            </code>
+            <p>.</p>
+        </section>
+        <section id="baseline" class="main-section">
+            <header>Baseline</header>
+            <p>Align items to their baselines. Baseline is a text concept, think of it as the line that the letters sit
+                on.
+            </p>
+            <code>
+                #box-container {
+                display: flex;
+                align-items: baseline;}
+            </code>
+            <p>.</p>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<style>
+    @media (min-width: 454px) {
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+        }
+
+        #navbar li {
+            list-style-type: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            text-align: start;
+        }
+    }
+</style>
