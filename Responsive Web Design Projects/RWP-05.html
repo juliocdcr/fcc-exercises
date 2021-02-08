@@ -1,0 +1,48 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+
+<body>
+    <nav id="navbar">
+        <a href="#projects">Projects</a>
+    </nav>
+    <main>
+        <section id="welcome-section">
+            <h1>Welcome to Julio's portfolio</h1>
+            <a href="https://github.com/juliocdcr" target="_blank" id="profile-link">
+                <img src="https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png">
+            </a>
+        </section>
+        <section id="projects">
+            <a href="https://github.com/juliocdcr/fcc-exercises/blob/master/Responsive%20Web%20Design%20Projects/RWP-04.html"
+                target="_blank" class="project-tile">Last project</a>
+        </section>
+    </main>
+</body>
+
+</html>
+<style>
+    @media (min-width: 454px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #navbar {
+            position: fixed;
+        }
+
+        #welcome-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #welcome-section img {
+            height: 12vh;
+        }
+    }
+</style>
